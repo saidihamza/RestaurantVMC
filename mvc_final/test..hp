@@ -1,0 +1,16 @@
+$a=$_server['script_name']
+$b='www/view';
+$newUrl=replace('index.php',$b,$a);
+----> rest/mvcf/www/view/...
+spl_autoload_register(function($class)){
+if(substr($class,-10)){
+    $d='controller/'.$class.class.php
+}
+$k=$_server['pathinfo];
+substr($k,1);
+ucfirst($k)
+strolower($k)
+}
+$z=Mealcontroller;
+$z=Orercontroller;
+HomeController

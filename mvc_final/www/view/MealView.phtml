@@ -1,0 +1,23 @@
+
+	<fieldset>
+		<legend>Carte du Restaurant</legend>
+		<table>
+			<thead>
+				<tr>
+					<th>Menu</th>
+					<th>Prix</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php foreach ($meals as $meal) : ?>
+					<tr>
+						<td>
+						<a href="<?= $requestUrl ?>/detail?mealId=<?= $meal['Id'] ?>">	<strong><?= $meal['Name']; ?></strong></a>
+							<p><?= $meal['Description']; ?></p>
+						</td>
+						<td><strong><?= number_format($meal['SalePrice'], 2) ?></strong> €</td>
+					</tr>
+				<?php endforeach; ?>
+			</tbody>
+		</table>
+	</fieldset>
